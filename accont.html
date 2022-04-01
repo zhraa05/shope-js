@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>All prodect </title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="continar">
+        <div class="navbar">
+            <div class="log">
+               <a href="indax.html"> <img src="images/logo.png" alt="logo" width="125px"></a>
+            </div>
+            <nav class="nv">
+                <ul id="menuitmes" class="ty">
+                    <li class="uo"><a class="bg" href="indax.html">home</a> </li>
+                    <li class="uo"><a class="bg" href="brodect.html">products</a> </li>
+                    <li class="uo"><a class="bg" href="#about">about</a> </li>
+                    <li class="uo"><a class="bg" href="#contact">contact</a> </li>
+                    <li class="uo"><a class="bg" href="accont.html">account</a> </li>
+             <a href="indax.html"> <img src="images/cart.png" alt="logo" width="30px" height="30px"></a>
+                </ul>
+            </nav>
+          
+            <img src="images/menu.png" class="mnu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-- ********************** -->
+    <div class="accont">
+        <div class="continar">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" alt="" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="for-con">
+                        <div class="form-btn">
+                            <span onclick="login()">login</span>
+                            <span onclick="regster()">registre</span>
+                            <hr id="indctr">
+                        </div>
+                        <form id="loginform">
+                            <input type="text" placeholder="username">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">login</button>
+                            <a href="">forget password</a>
+                        </form>
+
+                        <form id="regform">
+                            <input type="text" placeholder="username">
+                           <input type="email" placeholder="email">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">registre</button>
+                         
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ****************************** -->
+    <footer class="footer">
+        <div class="continar">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>downlod our app</h3>
+                    <p>downlod our app for android an ios mopil phon</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="logo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Fugit magni illum njioiu ,deleniti!</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful link</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>join affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>folow us</h3>
+                    <ul>
+                        <li>facebook</li>
+                        <li> instgram</li>
+                        <li>twitter </li>
+                        <li>phon </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copy-r">copyright 2021 zhtraa sabah</p>
+        </div>
+    </footer>
+
+    <!-- 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> -->
+    <script>
+        var menuitmes = document.getElementById("menuitmes");
+        menuitmes.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuitmes.style.maxHeight == "0px") {
+                menuitmes.style.maxHeight = "200px"
+            }
+            else {
+                menuitmes.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    <script>
+        var loginform = document.getElementById("loginform")
+        var regform = document.getElementById("regform")
+        var indctr = document.getElementById("indctr")
+    function regster(){
+        regform.style.transform = "translateX(0px)";
+        loginform.style.transform = "translateX(0px)";
+        indctr.style.transform = "translateX(100px)";
+    }
+    function login(){
+        regform.style.transform = "translateX(300px)";
+        loginform.style.transform = "translateX(300px)";
+           indctr.style.transform = "translateX(0px)";
+    }
+    </script>
+</body>
+
+</html>
